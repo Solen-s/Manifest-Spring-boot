@@ -4,8 +4,7 @@ metadata:
   name: {{ .Release.Name }}-{{ .Chart.Name }}
   namespace: {{ .Values.namespace }}
 spec:
-  rerplicas: {{ .Values.replicaCount }}
-  seletector:
+  selector:
     matchLabels:
       app: {{ .Chart.Name }}
       release: {{ .Release.Name }}
