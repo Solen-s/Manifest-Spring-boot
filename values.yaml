@@ -1,10 +1,11 @@
 replicaCount: 1
+namespace: spring-boot
 image: 
-  reposistory: solenn9/spring-boot
+  repositorysudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y: solenn9/spring-boot
   tag: "0.0.0"
   containerPort: 9090
 
 service: 
   type: LoadBalancer
   port: 9090
-  targetPort: 3000
+  targetPort: 9090
