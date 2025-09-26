@@ -1,0 +1,10 @@
+replicaCount: 1
+image: 
+  reposistory: solenn9/spring-boot
+  tag: "0.0.0"
+  containerPort: 9090
+
+service: 
+  type: LoadBalancer
+  port: 9090
+  targetPort: 3000
