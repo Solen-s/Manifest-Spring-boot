@@ -4,4 +4,4 @@ metadata:
   name: postgres-config
   namespace: {{ .Values.namespace }}
 data: 
-  postgres-url: jdbc:postgresql://postgres-service:5432/postgres
+  postgres-url: jdbc:postgresql://postgres-service.spring-boot.svc.cluster.local:5432/postgres
