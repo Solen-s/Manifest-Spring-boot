@@ -2,7 +2,7 @@ replicaCount: 1
 namespace: spring-boot
 image: 
   repository: solenn9/spring-boot
-  tag: "29"
+  tag: 3
   containerPort: 9090
 
 service: 
